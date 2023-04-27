@@ -6,7 +6,7 @@
           <div class="aspect-[1266/975] w-[79.125rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
         </div>
         <div class="flex flex-row items-center justify-center">
-          <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover mr-12" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80" alt="">
+          <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover mr-12" src="https://lucastrindade.dev/images/resource/lucastrindade.jpg" alt="">
           <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
             <h2 class="text-base font-semibold leading-8 text-indigo-400">Desenvolvedor Full-Stack</h2>
             <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Lucas O. Trindade</p>
@@ -25,7 +25,7 @@
   
   <script setup>
   const stats = [
-    { id: 1, name: 'Creators on the platform', value: '8,000+' },
+    { id: 1, name: 'Creators on the platform', value: '9999' },
     { id: 2, name: 'Flat platform fee', value: '3%' },
     { id: 3, name: 'Uptime guarantee', value: '99.9%' },
     { id: 4, name: 'Paid out to creators', value: '$70M' },
