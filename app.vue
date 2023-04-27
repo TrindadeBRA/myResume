@@ -1,6 +1,7 @@
 <template>
   <div>
     <Header></Header>
+    <Hero></Hero>
     <Presentation></Presentation>
     <Skiils></Skiils>
     <Certificate></Certificate>

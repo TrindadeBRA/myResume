@@ -1,80 +1,65 @@
 <template>
-    <div class="bg-white py-24 sm:py-32">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-8 overflow-hidden lg:mx-0 lg:max-w-none lg:grid-cols-4">
-          <div v-for="item in timeline" :key="item.name">
-            <time :datetime="item.dateTime" class="flex items-center text-sm font-semibold leading-6 text-indigo-600">
-              <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
-                <circle cx="2" cy="2" r="2" fill="currentColor" />
-              </svg>
-              {{ item.date }}
-              <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0" aria-hidden="true" />
-            </time>
-            <p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">{{ item.name }}</p>
-            <p class="mt-1 text-base leading-7 text-gray-600">{{ item.description }}</p>
-          </div>
-        </div>
+  <div class="bg-gray-900 py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <h2 class="text-base font-semibold leading-7 text-indigo-400">Everything you need</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">No server? No problem.</p>
+        <p class="mt-6 text-lg leading-8 text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
       </div>
+      <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-16">
+        <div v-for="feature in features" :key="feature.name" class="relative pl-9">
+          <dt class="inline font-semibold text-white">
+            <component :is="feature.icon" class="absolute left-1 top-1 h-5 w-5 text-indigo-500" aria-hidden="true" />
+            {{ feature.name }}
+          </dt>
+          {{ ' ' }}
+          <dd class="inline">{{ feature.description }}</dd>
+        </div>
+      </dl>
     </div>
-  </template>
-  
-  <script setup>
-  const timeline = [
-    {
-      name: 'Founded company',
-      description:
-        'Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur asperiores et dolorem dolorem optio voluptate repudiandae.',
-      date: 'Aug 2021',
-      dateTime: '2021-08',
-    },
-    {
-      name: 'Secured $65m in funding',
-      description:
-        'Provident quia ut esse. Vero vel eos repudiandae aspernatur. Cumque minima impedit sapiente a architecto nihil.',
-      date: 'Dec 2021',
-      dateTime: '2021-12',
-    },
-    {
-      name: 'Released beta',
-      description:
-        'Sunt perspiciatis incidunt. Non necessitatibus aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.',
-      date: 'Feb 2022',
-      dateTime: '2022-02',
-    },
-    {
-      name: 'Global launch of product',
-      description:
-        'Ut ipsa sint distinctio quod itaque nam qui. Possimus aut unde id architecto voluptatem hic aut pariatur velit.',
-      date: 'Dec 2022',
-      dateTime: '2022-12',
-    },
-    {
-      name: 'Founded company',
-      description:
-        'Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur asperiores et dolorem dolorem optio voluptate repudiandae.',
-      date: 'Aug 2021',
-      dateTime: '2021-08',
-    },
-    {
-      name: 'Secured $65m in funding',
-      description:
-        'Provident quia ut esse. Vero vel eos repudiandae aspernatur. Cumque minima impedit sapiente a architecto nihil.',
-      date: 'Dec 2021',
-      dateTime: '2021-12',
-    },
-    {
-      name: 'Released beta',
-      description:
-        'Sunt perspiciatis incidunt. Non necessitatibus aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.',
-      date: 'Feb 2022',
-      dateTime: '2022-02',
-    },
-    {
-      name: 'Global launch of product',
-      description:
-        'Ut ipsa sint distinctio quod itaque nam qui. Possimus aut unde id architecto voluptatem hic aut pariatur velit.',
-      date: 'Dec 2022',
-      dateTime: '2022-12',
-    },
-  ]
-  </script>
+  </div>
+</template>
+
+<script setup>
+import {
+  ArrowPathIcon,
+  CloudArrowUpIcon,
+  Cog6ToothIcon,
+  FingerPrintIcon,
+  LockClosedIcon,
+  ServerIcon,
+} from '@heroicons/vue/20/solid'
+
+const features = [
+  {
+    name: 'Push to deploy.',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
+    icon: CloudArrowUpIcon,
+  },
+  {
+    name: 'SSL certificates.',
+    description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+    icon: LockClosedIcon,
+  },
+  {
+    name: 'Simple queues.',
+    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus voluptas blanditiis et.',
+    icon: ArrowPathIcon,
+  },
+  {
+    name: 'Advanced security.',
+    description: 'Iure sed ab. Aperiam optio placeat dolor facere. Officiis pariatur eveniet atque et dolor.',
+    icon: FingerPrintIcon,
+  },
+  {
+    name: 'Powerful API.',
+    description: 'Laudantium tempora sint ut consectetur ratione. Ut illum ut rem numquam fuga delectus.',
+    icon: Cog6ToothIcon,
+  },
+  {
+    name: 'Database backups.',
+    description: 'Culpa dolorem voluptatem velit autem rerum qui et corrupti. Quibusdam quo placeat.',
+    icon: ServerIcon,
+  },
+]
+</script>
