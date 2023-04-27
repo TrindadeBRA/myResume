@@ -6,5 +6,6 @@
     <Certificate></Certificate>
     <Experiences></Experiences>
     <Contact></Contact>
+    <Footer></Footer>
   </div>
 </template>
