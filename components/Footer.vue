@@ -12,7 +12,7 @@
           <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
         </a>
       </div>
-      <p class="mt-10 text-center text-xs leading-5 text-gray-300">&copy; 2020 Your Company, Inc. All rights reserved.</p>
+      <p class="mt-10 text-center text-xs leading-5 text-gray-300">&copy; 2023 Lucas Trindade, Todos direitos reservados.</p>
     </div>
   </footer>
 </template>
