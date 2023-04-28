@@ -5,15 +5,15 @@
         <div class="absolute -bottom-8 -left-96 -z-10 transform-gpu blur-3xl sm:-bottom-64 sm:-left-40 lg:-bottom-32 lg:left-8 xl:-left-10" aria-hidden="true">
           <div class="aspect-[1266/975] w-[79.125rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
         </div>
-        <div class="flex flex-row items-center justify-center">
-          <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover mr-12" src="https://lucastrindade.dev/images/resource/lucastrindade.jpg" alt="">
+        <div class="flex flex-col md:flex-row items-center justify-center">
+          <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover md:mr-12 mb-6 md:mb-0" src="https://lucastrindade.dev/images/resource/lucastrindade.jpg" alt="">
           <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-            <h2 class="text-base font-semibold leading-8 text-indigo-400">Desenvolvedor Full-Stack</h2>
-            <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Lucas Trindade</p>
-            <p class="mt-6 text-lg leading-8 text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+            <h2 class="text-base text-center md:text-left font-semibold leading-8 text-indigo-400">Desenvolvedor Full-Stack</h2>
+            <p class="mt-2 text-3xl text-center md:text-left font-bold tracking-tight text-white sm:text-4xl">Lucas Trindade</p>
+            <p class="mt-6 text-lg text-center md:text-left leading-8 text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
           </div>
         </div>
-        <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 text-white sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+        <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-10 text-white sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
           <div v-for="stat in stats" :key="stat.id" class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
             <dt class="text-sm leading-6">{{ stat.name }}</dt>
             <dd class="order-first text-3xl font-semibold tracking-tight">{{ stat.value }}</dd>

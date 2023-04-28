@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-gray-950">
     <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
-      <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
+      <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12 hidden" aria-label="Footer">
         <div v-for="item in navigation.main" :key="item.name" class="pb-6">
           <a :href="item.href" class="text-sm leading-6 text-gray-300 hover:text-gray-200">{{ item.name }}</a>
         </div>

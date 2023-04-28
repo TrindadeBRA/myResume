@@ -4,7 +4,7 @@
         <div class="mx-auto max-w-2xl text-center">
           <h2 class="text-base font-semibold leading-7 text-indigo-600">Estudos</h2>
           <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Certificados</h2>
-          <p class="mt-2 text-lg leading-8 text-gray-300">Learn how to grow your business with our expert advice.</p>
+          <p class="mt-2 text-lg leading-8 text-gray-300 hidden">Learn how to grow your business with our expert advice.</p>
         </div>
         <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-4">
 
