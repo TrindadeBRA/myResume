@@ -9,7 +9,7 @@
           <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover mr-12" src="https://lucastrindade.dev/images/resource/lucastrindade.jpg" alt="">
           <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
             <h2 class="text-base font-semibold leading-8 text-indigo-400">Desenvolvedor Full-Stack</h2>
-            <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Lucas O. Trindade</p>
+            <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Lucas Trindade</p>
             <p class="mt-6 text-lg leading-8 text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
           </div>
         </div>
