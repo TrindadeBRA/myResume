@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gradient-to-t from-gray-950 to-gray-900 py-24 sm:py-32" id="experiencias">
+  <div class="bg-gradient-to-t from-gray-950 to-gray-900 py-24" id="experiencias">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div>
             <h2 class="text-base font-semibold leading-7 text-indigo-600">Minha jornada</h2>

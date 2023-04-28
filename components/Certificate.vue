@@ -60,7 +60,7 @@
             description:
               'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
             imageUrl:
-              'https://lucastrindade.dev/images/certificados/analise-desenvolvimento-de-sistemas.webp',
+              'https://thetrinityweb.com.br/resume/images/certificados/analise-desenvolvimento-de-sistemas.webp',
             date: 'Mar 16, 2023',
             datetime: '2023-03-16',
             category: { title: 'Marketing', href: '#' },
@@ -79,7 +79,7 @@
             description:
               'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
             imageUrl:
-              'https://lucastrindade.dev/images/certificados/analise-desenvolvimento-de-sistemas.webp',
+              'https://thetrinityweb.com.br/resume/images/certificados/solid-os-5-principios-para-as-boas-praticas-da-poo.webp',
             date: 'Mar 16, 2023',
             datetime: '2023-03-16',
             category: { title: 'Marketing', href: '#' },
@@ -98,7 +98,7 @@
             description:
               'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
             imageUrl:
-              'https://lucastrindade.dev/images/certificados/analise-desenvolvimento-de-sistemas.webp',
+              'https://thetrinityweb.com.br/resume/images/certificados/vue-js-3.webp',
             date: 'Mar 16, 2023',
             datetime: '2023-03-16',
             category: { title: 'Marketing', href: '#' },
@@ -117,7 +117,7 @@
             description:
               'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
             imageUrl:
-              'https://lucastrindade.dev/images/certificados/analise-desenvolvimento-de-sistemas.webp',
+              'https://thetrinityweb.com.br/resume/images/certificados/css-avan%C3%A7ado.webp',
             date: 'Mar 16, 2023',
             datetime: '2023-03-16',
             category: { title: 'Marketing', href: '#' },
@@ -136,7 +136,7 @@
             description:
               'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
             imageUrl:
-              'https://lucastrindade.dev/images/certificados/solid-os-5-principios-para-as-boas-praticas-da-poo.webp',
+              'https://thetrinityweb.com.br/resume/images/certificados/scrum-para-desenvolvedores-de-software.webp',
             date: 'Mar 16, 2023',
             datetime: '2023-03-16',
             category: { title: 'Marketing', href: '#' },
@@ -155,7 +155,121 @@
             description:
               'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
             imageUrl:
-              'https://lucastrindade.dev/images/certificados/vue-js-3.webp',
+              'https://thetrinityweb.com.br/resume/images/certificados/git-e-github-essencial.webp',
+            date: 'Mar 16, 2023',
+            datetime: '2023-03-16',
+            category: { title: 'Marketing', href: '#' },
+            author: {
+              name: 'Michael Foster',
+              role: 'Co-Founder / CTO',
+              href: '#',
+              imageUrl:
+                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            },
+          },
+          {
+            id: 1,
+            title: 'Boost your conversion rate',
+            href: '#',
+            description:
+              'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+            imageUrl:
+              'https://thetrinityweb.com.br/resume/images/certificados/discover-especializar-certificate.webp',
+            date: 'Mar 16, 2023',
+            datetime: '2023-03-16',
+            category: { title: 'Marketing', href: '#' },
+            author: {
+              name: 'Michael Foster',
+              role: 'Co-Founder / CTO',
+              href: '#',
+              imageUrl:
+                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            },
+          },
+          {
+            id: 1,
+            title: 'Boost your conversion rate',
+            href: '#',
+            description:
+              'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+            imageUrl:
+              'https://thetrinityweb.com.br/resume/images/certificados/discover-fundamentar-certificate.webp',
+            date: 'Mar 16, 2023',
+            datetime: '2023-03-16',
+            category: { title: 'Marketing', href: '#' },
+            author: {
+              name: 'Michael Foster',
+              role: 'Co-Founder / CTO',
+              href: '#',
+              imageUrl:
+                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            },
+          },
+          {
+            id: 1,
+            title: 'Boost your conversion rate',
+            href: '#',
+            description:
+              'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+            imageUrl:
+              'https://thetrinityweb.com.br/resume/images/certificados/discover-conectar-certificate.webp',
+            date: 'Mar 16, 2023',
+            datetime: '2023-03-16',
+            category: { title: 'Marketing', href: '#' },
+            author: {
+              name: 'Michael Foster',
+              role: 'Co-Founder / CTO',
+              href: '#',
+              imageUrl:
+                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            },
+          },
+          {
+            id: 1,
+            title: 'Boost your conversion rate',
+            href: '#',
+            description:
+              'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+            imageUrl:
+              'https://thetrinityweb.com.br/resume/images/certificados/php7-udemy.webp',
+            date: 'Mar 16, 2023',
+            datetime: '2023-03-16',
+            category: { title: 'Marketing', href: '#' },
+            author: {
+              name: 'Michael Foster',
+              role: 'Co-Founder / CTO',
+              href: '#',
+              imageUrl:
+                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            },
+          },
+          {
+            id: 1,
+            title: 'Boost your conversion rate',
+            href: '#',
+            description:
+              'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+            imageUrl:
+              'https://thetrinityweb.com.br/resume/images/certificados/php7-hcode.webp',
+            date: 'Mar 16, 2023',
+            datetime: '2023-03-16',
+            category: { title: 'Marketing', href: '#' },
+            author: {
+              name: 'Michael Foster',
+              role: 'Co-Founder / CTO',
+              href: '#',
+              imageUrl:
+                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            },
+          },
+          {
+            id: 1,
+            title: 'Boost your conversion rate',
+            href: '#',
+            description:
+              'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+            imageUrl:
+              'https://thetrinityweb.com.br/resume/images/certificados/git-github-avancado.webp',
             date: 'Mar 16, 2023',
             datetime: '2023-03-16',
             category: { title: 'Marketing', href: '#' },
