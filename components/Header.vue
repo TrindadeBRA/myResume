@@ -3,8 +3,8 @@
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
         <a href="#" class="-m-1.5 p-1.5">
-          <span class="sr-only">Your Company</span>
-          <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="" />
+          <span class="sr-only">Your Company</span> 
+          <p class="text-white text-xl font-bold">Lucas Trindade</p>
         </a>
       </div>
       <div class="flex lg:hidden">
@@ -15,9 +15,6 @@
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
         <a v-for="item in navigation" :key="item.name" :href="item.href" class="text-sm font-semibold leading-6 text-white">{{ item.name }}</a>
-      </div>
-      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" class="text-sm font-semibold leading-6 text-white">Log in <span aria-hidden="true">&rarr;</span></a>
       </div>
     </nav>
     <Dialog as="div" class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
@@ -38,9 +35,6 @@
             <div class="space-y-2 py-6">
               <a v-for="item in navigation" :key="item.name" :href="item.href" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">{{ item.name }}</a>
             </div>
-            <div class="py-6">
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800">Log in</a>
-            </div>
           </div>
         </div>
       </DialogPanel>
@@ -54,10 +48,10 @@ import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Apresentação', href: '#apresentacao' },
+  { name: 'Skills', href: '#skills' },
+  { name: 'Certificados', href: '#certificados' },
+  { name: 'Experiencias Profissionais', href: '#experiencias' },
 ]
 
 const mobileMenuOpen = ref(false)
