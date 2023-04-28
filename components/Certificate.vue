@@ -15,16 +15,15 @@
             </div>
             <div class="w-full">
               <div class="group relative">
-                <h3 class="mt-4 text-lg font-semibold leading-6 text-white group-hover:text-gray-300 text-center cursor-pointer" @click="openModal(post.imageUrl)">
+                <h3 class="mt-2 text-base font-semibold leading-6 text-white group-hover:text-gray-300 text-center cursor-pointer line-clamp-2" @click="openModal(post.imageUrl)">
                   {{ post.title }}
                 </h3>
-                <p class="mt-4 text-base font-light leading-6 text-white group-hover:text-gray-300 text-center cursor-pointer" @click="openModal(post.imageUrl)">
-                  {{ post.title }}
+                <p class="mt-2 text-base font-light italic leading-6 text-white group-hover:text-gray-300 text-center cursor-pointer" @click="openModal(post.imageUrl)">
+                  {{ post.institution }}
                 </p>
               </div>
-              <div class="mt-8 flex items-center gap-x-4 text-xs justify-around pb-2">
+              <div class="mt-2 flex items-center gap-x-4 text-xs justify-around pb-2">
                 <time :datetime="post.datetime" class="text-gray-300">{{ post.date }}</time>
-                <a :href="post.category.href" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-700 hover:bg-gray-100">{{ post.category.title }}</a>
               </div>
             </div>
           </article>
@@ -55,231 +54,91 @@
         posts: [
           {
             id: 1,
-            title: 'Boost your conversion rate',
-            href: '#',
-            description:
-              'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-            imageUrl:
-              'https://thetrinityweb.com.br/resume/images/certificados/analise-desenvolvimento-de-sistemas.webp',
-            date: 'Mar 16, 2023',
-            datetime: '2023-03-16',
-            category: { title: 'Marketing', href: '#' },
-            author: {
-              name: 'Michael Foster',
-              role: 'Co-Founder / CTO',
-              href: '#',
-              imageUrl:
-                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-            },
+            title: 'Análise e Desenvolvimento de Sistemas',
+            institution: 'UNIP – Universidade Paulista',
+            imageUrl: 'https://thetrinityweb.com.br/resume/images/certificados/analise-desenvolvimento-de-sistemas.webp',
+            date: 'Jun 01, 2019',
+            category: 'Graduação',
           },
           {
-            id: 1,
-            title: 'Boost your conversion rate',
-            href: '#',
-            description:
-              'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-            imageUrl:
-              'https://thetrinityweb.com.br/resume/images/certificados/solid-os-5-principios-para-as-boas-praticas-da-poo.webp',
-            date: 'Mar 16, 2023',
-            datetime: '2023-03-16',
-            category: { title: 'Marketing', href: '#' },
-            author: {
-              name: 'Michael Foster',
-              role: 'Co-Founder / CTO',
-              href: '#',
-              imageUrl:
-                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-            },
+            id: 2,
+            title: 'SOLID - Os 5 Princípios Para as Boas Práticas da POO',
+            institution: 'Udemy – Jorge Sant Ana',
+            imageUrl: 'https://thetrinityweb.com.br/resume/images/certificados/solid-os-5-principios-para-as-boas-praticas-da-poo.webp',
+            date: 'Abr 25, 2023',
+            category: 'Horas',
           },
           {
-            id: 1,
-            title: 'Boost your conversion rate',
-            href: '#',
-            description:
-              'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-            imageUrl:
-              'https://thetrinityweb.com.br/resume/images/certificados/vue-js-3.webp',
-            date: 'Mar 16, 2023',
-            datetime: '2023-03-16',
-            category: { title: 'Marketing', href: '#' },
-            author: {
-              name: 'Michael Foster',
-              role: 'Co-Founder / CTO',
-              href: '#',
-              imageUrl:
-                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-            },
+            id: 3,
+            title: 'Vue JS 3: Desenvolvimento Web Moderno com Vuex & Vue Router',
+            institution: 'Udemy – Ivan Lourenço Gomes',
+            imageUrl: 'https://thetrinityweb.com.br/resume/images/certificados/vue-js-3.webp',
+            date: 'Abr 14, 2023',
+            category: 'Horas',
           },
           {
-            id: 1,
-            title: 'Boost your conversion rate',
-            href: '#',
-            description:
-              'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-            imageUrl:
-              'https://thetrinityweb.com.br/resume/images/certificados/css-avan%C3%A7ado.webp',
-            date: 'Mar 16, 2023',
-            datetime: '2023-03-16',
-            category: { title: 'Marketing', href: '#' },
-            author: {
-              name: 'Michael Foster',
-              role: 'Co-Founder / CTO',
-              href: '#',
-              imageUrl:
-                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-            },
+            id: 4,
+            title: 'CSS Avançado - Sass, CSS Grid Layout e CSS Modules',
+            institution: 'Udemy – Brunão Sousa',
+            imageUrl: 'https://thetrinityweb.com.br/resume/images/certificados/vue-js-3.webp',
+            date: 'Abr 14, 2023',
+            category: 'Horas',
           },
           {
-            id: 1,
-            title: 'Boost your conversion rate',
-            href: '#',
-            description:
-              'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-            imageUrl:
-              'https://thetrinityweb.com.br/resume/images/certificados/scrum-para-desenvolvedores-de-software.webp',
-            date: 'Mar 16, 2023',
-            datetime: '2023-03-16',
-            category: { title: 'Marketing', href: '#' },
-            author: {
-              name: 'Michael Foster',
-              role: 'Co-Founder / CTO',
-              href: '#',
-              imageUrl:
-                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-            },
+            id: 5,
+            title: 'Scrum para Desenvolvedores de Software',
+            institution: 'Udemy – Bruno Coutinho',
+            imageUrl: 'https://thetrinityweb.com.br/resume/images/certificados/scrum-para-desenvolvedores-de-software.webp',
+            date: 'Jan 05, 2023',
+            category: 'Horas',
           },
           {
-            id: 1,
-            title: 'Boost your conversion rate',
-            href: '#',
-            description:
-              'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-            imageUrl:
-              'https://thetrinityweb.com.br/resume/images/certificados/git-e-github-essencial.webp',
-            date: 'Mar 16, 2023',
-            datetime: '2023-03-16',
-            category: { title: 'Marketing', href: '#' },
-            author: {
-              name: 'Michael Foster',
-              role: 'Co-Founder / CTO',
-              href: '#',
-              imageUrl:
-                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-            },
+            id: 6,
+            title: 'Git e Github Essencial para o Desenvolvedor',
+            institution: 'Udemy – Geek University',
+            imageUrl: 'https://thetrinityweb.com.br/resume/images/certificados/git-e-github-essencial.webp',
+            date: 'Jan 02, 2023',
+            category: 'Horas',
           },
           {
-            id: 1,
-            title: 'Boost your conversion rate',
-            href: '#',
-            description:
-              'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-            imageUrl:
-              'https://thetrinityweb.com.br/resume/images/certificados/discover-especializar-certificate.webp',
-            date: 'Mar 16, 2023',
-            datetime: '2023-03-16',
-            category: { title: 'Marketing', href: '#' },
-            author: {
-              name: 'Michael Foster',
-              role: 'Co-Founder / CTO',
-              href: '#',
-              imageUrl:
-                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-            },
+            id: 7,
+            title: 'Trilha Especializar',
+            institution: 'Rocketseat',
+            imageUrl: 'https://thetrinityweb.com.br/resume/images/certificados/discover-especializar-certificate.webp',
+            date: 'Out 14, 2022',
+            category: 'Horas',
           },
           {
-            id: 1,
-            title: 'Boost your conversion rate',
-            href: '#',
-            description:
-              'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-            imageUrl:
-              'https://thetrinityweb.com.br/resume/images/certificados/discover-fundamentar-certificate.webp',
-            date: 'Mar 16, 2023',
-            datetime: '2023-03-16',
-            category: { title: 'Marketing', href: '#' },
-            author: {
-              name: 'Michael Foster',
-              role: 'Co-Founder / CTO',
-              href: '#',
-              imageUrl:
-                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-            },
+            id: 8,
+            title: 'Trilha Fundamentar',
+            institution: 'Rocketseat',
+            imageUrl: 'https://thetrinityweb.com.br/resume/images/certificados/discover-fundamentar-certificate.webp',
+            date: 'Set 14, 2022',
+            category: 'Horas',
           },
           {
-            id: 1,
-            title: 'Boost your conversion rate',
-            href: '#',
-            description:
-              'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-            imageUrl:
-              'https://thetrinityweb.com.br/resume/images/certificados/discover-conectar-certificate.webp',
-            date: 'Mar 16, 2023',
-            datetime: '2023-03-16',
-            category: { title: 'Marketing', href: '#' },
-            author: {
-              name: 'Michael Foster',
-              role: 'Co-Founder / CTO',
-              href: '#',
-              imageUrl:
-                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-            },
+            id: 9,
+            title: 'Trilha Conectar',
+            institution: 'Rocketseat',
+            imageUrl: 'https://thetrinityweb.com.br/resume/images/certificados/discover-conectar-certificate.webp',
+            date: 'Ago 09, 2022',
+            category: 'Horas',
           },
           {
-            id: 1,
-            title: 'Boost your conversion rate',
-            href: '#',
-            description:
-              'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-            imageUrl:
-              'https://thetrinityweb.com.br/resume/images/certificados/php7-udemy.webp',
-            date: 'Mar 16, 2023',
-            datetime: '2023-03-16',
-            category: { title: 'Marketing', href: '#' },
-            author: {
-              name: 'Michael Foster',
-              role: 'Co-Founder / CTO',
-              href: '#',
-              imageUrl:
-                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-            },
+            id: 10,
+            title: 'PHP 7 Completo',
+            institution: 'Hode',
+            imageUrl: 'https://thetrinityweb.com.br/resume/images/certificados/php7-hcode.webp',
+            date: 'Jun 09, 2022',
+            category: 'Horas',
           },
           {
-            id: 1,
-            title: 'Boost your conversion rate',
-            href: '#',
-            description:
-              'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-            imageUrl:
-              'https://thetrinityweb.com.br/resume/images/certificados/php7-hcode.webp',
-            date: 'Mar 16, 2023',
-            datetime: '2023-03-16',
-            category: { title: 'Marketing', href: '#' },
-            author: {
-              name: 'Michael Foster',
-              role: 'Co-Founder / CTO',
-              href: '#',
-              imageUrl:
-                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-            },
-          },
-          {
-            id: 1,
-            title: 'Boost your conversion rate',
-            href: '#',
-            description:
-              'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-            imageUrl:
-              'https://thetrinityweb.com.br/resume/images/certificados/git-github-avancado.webp',
-            date: 'Mar 16, 2023',
-            datetime: '2023-03-16',
-            category: { title: 'Marketing', href: '#' },
-            author: {
-              name: 'Michael Foster',
-              role: 'Co-Founder / CTO',
-              href: '#',
-              imageUrl:
-                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-            },
+            id: 11,
+            title: 'PHP 7 Completo',
+            institution: 'Udemy - Matheus Battisti',
+            imageUrl: 'https://thetrinityweb.com.br/resume/images/certificados/git-github-avancado.webp',
+            date: 'Mai 24, 2022',
+            category: 'Horas',
           },
         ],
       };
