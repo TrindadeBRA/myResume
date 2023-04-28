@@ -30,8 +30,8 @@
 
           <!-- Modal -->
           <div v-show="showModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
-            <div class="w-4/5 relative">
-              <img :src="showImageUrl" alt="Imagem" class="max-w-full max-h-full">
+            <div class="w-4/5 lg:w-3/5 2xl:w-2/6 relative">
+              <img :src="showImageUrl" alt="Imagem" class="max-w-full">
               <button @click="closeModal" class="absolute -top-8 -right-8 m-4 p-2 rounded-full bg-white text-gray-800 shadow-md">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
