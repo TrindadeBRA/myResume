@@ -41,7 +41,7 @@
             />
             <div class="text-sm leading-6">
               <p class="font-semibold text-white">
-                <a :href="experience.company_website">
+                <a>
                   <span class="absolute inset-0" />
                   {{ experience.company_name }}
                 </a>
