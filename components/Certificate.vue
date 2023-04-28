@@ -8,8 +8,9 @@
         </div>
         <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-4">
 
-          <article v-for="post in posts" :key="post.id" class="flex flex-col items-start justify-between bg-gray-800 py-5 px-5 rounded-3xl shadow-md shadow-gray-600" >
-            <div class="relative w-full cursor-pointer mb-5" @click="openModal(post.imageUrl)">
+          <article v-for="post in posts" :key="post.id" class="flex flex-col items-start justify-between cursor-pointer bg-gray-800 py-5 px-5 rounded-3xl shadow-md shadow-gray-600"
+          @click="openModal(post.imageUrl)">
+            <div class="relative w-full cursor-pointer mb-5">
               <img :src="post.imageUrl" alt="" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2] cursor-pointer"/>
               <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/10" />
             </div>
@@ -144,12 +145,6 @@
       };
     },
     methods: {
-      handleKeyDown(event) {
-      if (event.keyCode === 27) {
-        // Pressionada a tecla ESC
-        this.closeModal();
-      }
-    },
       openModal(imageUrl) {
         this.showImageUrl = imageUrl
         this.showModal = true;

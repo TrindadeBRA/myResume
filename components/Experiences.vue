@@ -10,35 +10,28 @@
           v-for="experience in professional_experiences"
           :key="experience.id"
           class="flex max-w-xl flex-col items-start justify-between bg-gray-900 p-6 rounded-2xl border border-gray-600 cursor-pointer w-full"
-        >
+          @click="openModal(experience.imageUrl)">
           <div class="flex items-center gap-x-4 text-xs w-full">
-
+            <!-- Online / Atual -->
             <div v-if="experience.departure_date == 'Atual'" class="flex gap-3 items-center w-full justify-between">
-              
               <p class="text-xs text-gray-500">{{ formatDate(experience.admission_date) }} - {{ experience.departure_date }}</p>
-
               <span class="flex items-center gap-x-1.5 rounded-md px-3 py-1 text-xs font-medium text-white ring-1 ring-inset ring-gray-700">
                 <svg class="h-1.5 w-1.5 fill-green-400" viewBox="0 0 6 6" aria-hidden="true">
                   <circle cx="3" cy="3" r="3" />
                 </svg>
                 online
               </span>
-
             </div>
-
+            <!-- Offline / Encerrado -->
             <div v-if="experience.departure_date !== 'Atual'" class="flex gap-3 items-center w-full justify-between">
-              
               <p class="text-xs text-gray-500">{{ formatDate(experience.admission_date) }} - {{ formatDate(experience.departure_date) }}</p>
-
               <span class="flex items-center gap-x-1.5 rounded-md px-3 py-1 text-xs font-medium text-white ring-1 ring-inset ring-gray-700">
                 <svg class="h-1.5 w-1.5 fill-red-800" viewBox="0 0 6 6" aria-hidden="true">
                   <circle cx="3" cy="3" r="3" />
                 </svg>
                 offline
               </span>
-
             </div>
-
           </div>
           <div class="relative mt-4 flex items-center gap-x-4">
             <img
@@ -56,8 +49,20 @@
               <p class="text-gray-400">{{ experience.role }}</p>
             </div>
           </div>
-
         </article>
+
+        <!-- Modal -->
+        <div v-show="showModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
+          <div class="w-4/5 lg:w-3/5 2xl:w-2/6 relative">
+            <img :src="showImageUrl" alt="Imagem" class="max-w-full">
+            <button @click="closeModal" class="absolute -top-8 -right-8 m-4 p-2 rounded-full bg-white text-gray-800 shadow-md">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -67,6 +72,8 @@
   export default {
     data() {
       return {
+        showModal: false,
+        showImageUrl: "",
         professional_experiences: [
           {
             id: 1,
@@ -150,6 +157,15 @@
         const year = inputDate.slice(0, 4);
         const month = inputDate.slice(5, 7);
         return `${month}/${year}`;
+      },
+      openModal(imageUrl) {
+        this.showImageUrl = imageUrl
+        this.showModal = true;
+        document.body.classList.add('overflow-hidden');
+      },
+      closeModal() {
+        this.showModal = false;
+        document.body.classList.remove('overflow-hidden');
       },
     }
   }
